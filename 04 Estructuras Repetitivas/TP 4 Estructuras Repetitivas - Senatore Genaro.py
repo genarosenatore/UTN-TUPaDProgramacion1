@@ -126,3 +126,5 @@ print(f"Cantidad de pares: {pares}")
 print(f"Cantidad de impares: {impares}")
 print(f"Cantidad de positivos: {positivos}")
 print(f"Cantidad de negativos:  {negativos}")
+
+"""9)"""
