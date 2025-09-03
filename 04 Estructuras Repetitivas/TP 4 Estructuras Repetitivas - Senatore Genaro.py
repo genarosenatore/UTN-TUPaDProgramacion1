@@ -127,4 +127,33 @@ print(f"Cantidad de impares: {impares}")
 print(f"Cantidad de positivos: {positivos}")
 print(f"Cantidad de negativos:  {negativos}")
 
-"""9)"""
+"""9) Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la
+media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe
+poder procesar 100 números cambiando solo un valor)."""
+
+print("--------------------------------------EJERCICIO N9--------------------------------------")
+N : int = 0
+Suma : int = 0
+print("Ingrese 100 numeros para calcular la media: ")
+for i in range (100):
+    N : int = int(input(f"Ingrese el Numero nro{i+1}: "))
+    Suma = Suma + N
+
+media : float = Suma/100
+print(f"La media es {media}")
+
+
+"""10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el
+usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745."""
+
+print("--------------------------------------EJERCICIO N10--------------------------------------") 
+N = int(input("Ingrese un número: "))
+invertido = 0
+
+while N > 0:
+    digito = N % 10           
+    invertido = invertido * 10 + digito
+    N = N // 10               
+print(f"El número invertido es: {invertido}")
+
+
