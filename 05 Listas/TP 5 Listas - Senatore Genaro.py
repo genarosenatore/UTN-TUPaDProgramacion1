@@ -38,3 +38,26 @@ animales : list = ["perro", "gato", "conejo", "pez"]
 animales[1] = "loro"
 animales[-1] = "oso"
 print(animales)
+
+"""5) Analizar el siguiente programa y explicar con tus palabras qué es lo que realiza."""
+print("--------------------------------------EJERCICIO N5--------------------------------------")
+numeros : list = [8, 15, 3, 22, 7] #CREAMOS LA LISTA DE NUMEROS
+numeros.remove(max(numeros)) #TOMAMOS EL VALOR MAS GRANDE DE LA LISTA Y LO ELIMINAMOS
+print(numeros) #MOSTRAMOS LA NUEVA LISTA SIN EL NUMERO 22 EL CUAL FUE REMOVIDO PORQUE ERA EL MAS GRANDE DE LA LISTA ANTERIOR
+
+"""6) Crear una lista con números del 10 al 30 (incluído), haciendo saltos de 5 en 5 y mostrar por
+pantalla los dos primeros."""
+print("--------------------------------------EJERCICIO N6--------------------------------------")
+lista_del_10_al_30_con_saltos_de_5 : list = []
+for i in range(10,31,5):
+        lista_del_10_al_30_con_saltos_de_5.append(i)
+print(lista_del_10_al_30_con_saltos_de_5)
+
+"""7) Reemplazar los dos valores centrales (índices 1 y 2) de la lista “autos” por dos nuevos valores
+cualesquiera.
+autos = ["sedan", "polo", "suran", "gol"]
+"""
+print("--------------------------------------EJERCICIO N7--------------------------------------")
+autos : list = ["sedan", "polo", "suran", "gol"]
+autos[1:3] = ["sirocco", "rcz"]
+print(autos)
